@@ -348,6 +348,7 @@ body {
     background-color: var(--bg-color);
     transform: rotateY(180deg);
     overflow: hidden;
+    font-size: 2rem;
   }
 
   .about-content .about-tulisan h1 {
@@ -359,6 +360,7 @@ body {
   .about-content .about-tulisan p {
     font-size: 1.7rem;
     padding: 0.5rem 0.8em;
+    padding-top: 1rem;
   }
 
   .about-content .about-tulisan h2 {
