@@ -347,6 +347,7 @@ body {
     padding-top: 0%;
     background-color: var(--bg-color);
     transform: rotateY(180deg);
+    overflow: hidden;
   }
 
   .about-content .about-tulisan h1 {
