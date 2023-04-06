@@ -363,7 +363,7 @@ body {
   .about-content .about-tulisan h2 {
     font-size: 4rem;
     padding-top: 0%;
-    /* border: 1px solid yellow; */
+    border: 1px solid yellow;
     padding-bottom: 5rem;
     position: relative;
   }
