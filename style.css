@@ -1,0 +1,432 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  scroll-behavior: smooth;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+:root {
+  --bg-color: #181818;
+  --second-bg-color: #212121;
+  --bg-gray: #3d3d3d;
+  --text-color: #fff;
+  --main-color: #0ef;
+  --second-text-color: #ff0000;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  background: var(--bg-color);
+  color: var(--text-color);
+}
+
+/* ============================================= */
+
+/* Brand */
+.header {
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 2rem 9%;
+  background: var(--bg-color);
+  display: flex;
+  justify-content: space-between;
+  z-index: 100;
+  background-color: rgb(0, 0, 0);
+  border-bottom: 3px solid var(--second-bg-color);
+  border-radius: 10px;
+  position: fixed;
+  text-shadow: 3px 2px rgb(139, 139, 139);
+  /* border: 1px solid red; */
+}
+
+.logo {
+  font-size: 2.5rem;
+  font-style: italic;
+  color: var(--text-color);
+  font-weight: 700;
+  cursor: default;
+  /* border: 1px solid blue; */
+}
+.header a {
+  color: var(--text-color);
+  font-size: 4rem;
+  /* border: 1px solid; */
+}
+.header span {
+  color: var(--second-text-color);
+}
+
+.navbar {
+  display: flex;
+  position: relative;
+
+  /* border: 1px solid yellow; */
+}
+.header .navbar a {
+  color: var(--text-color);
+  font-size: 2.5rem;
+  margin-right: 20px;
+}
+
+.navbar-extra #menu {
+  display: none;
+}
+.navbar #social {
+  display: none;
+}
+
+.header .navbar a:hover {
+  color: var(--second-text-color);
+  text-shadow: 2px 1px rgb(139, 139, 139);
+}
+
+.header .navbar a::after {
+  content: "";
+  display: block;
+  padding-bottom: 0.5rem;
+  border-bottom: 0.2rem solid var(--main-color);
+  transform: scaleX(0);
+  transition: 0.2s;
+}
+
+.header .navbar a:hover::after {
+  transform: scaleX(0.5);
+}
+/* akhir Brand */
+
+/* ========================================== */
+
+/* home */
+
+/* banner */
+.banner {
+  height: 100vh;
+  background-image: url(Reza.jpeg);
+  background-size: cover;
+  position: relative;
+  font-size: 1.5em;
+  font-weight: 400;
+  /* border: 1px solid blue; */
+}
+
+.banner::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    0deg,
+    rgb(0, 0, 0) 3%,
+    rgba(255, 255, 255, 0) 25%
+  );
+}
+
+/* -tulisan- */
+
+.banner .container {
+  padding: 45vh 9%;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+}
+
+.banner .container h3 {
+  font-size: 2.5rem;
+  font-family: "Pacifico", cursive;
+  padding-left: 1rem;
+  font-weight: 100;
+  align-items: center;
+  height: 40px;
+}
+
+.banner .container h1 {
+  font-size: 5rem;
+  font-family: "Josefin Sans", sans-serif;
+  padding-top: 1rem;
+  /* border: 1px solid; */
+}
+
+.banner .container h2 {
+  font-size: 3rem;
+  padding-left: 0.5rem;
+  /* border: 1px solid; */
+  font-family: "Alkatra", cursive;
+}
+
+.banner .container span {
+  color: red;
+  text-shadow: 1px 1px var(--main-color);
+  font-family: "Alkatra", cursive;
+}
+
+/* ================================================== */
+
+/* about */
+
+.about .about-content {
+  /* border: 1px solid yellow; */
+  height: 100vh;
+  padding-top: 85px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.getwaves {
+  /* border: 10px solid red; */
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.about .about-image img {
+  /* border: 1px solid blue; */
+  width: 85%;
+  padding: 3px;
+  background-color: var(--main-color);
+  border-radius: 30px;
+  box-shadow: 0 3px 18px 3px rgba(255, 255, 255, 0.411);
+}
+
+.about .about-tulisan {
+  /* border: 2px solid rgb(240, 230, 202); */
+  border-radius: 30px;
+
+  height: 85%;
+  width: 50%;
+}
+
+.about .about-tulisan h1 {
+  font-family: "Creepster", cursive;
+  width: 100%;
+  font-weight: 400;
+  font-size: 5rem;
+  padding: 10px;
+  display: flex;
+  border-bottom: 3px solid var(--main-color);
+}
+
+.about .about-tulisan p {
+  font-size: 19px;
+  /* border: 1px solid red; */
+  padding: 10px;
+  padding-top: 10px;
+  font-family: "Special Elite", sans-serif;
+}
+
+.about .about-tulisan h2 {
+  /* border: 1px solid; */
+  display: block;
+  padding: 2px;
+  padding-right: 30px;
+  font-size: 40px;
+  font-family: "Alex Brush", sans-serif;
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* ==================================================== */
+
+/* skill */
+
+.skill {
+  background-color: var(--second-bg-color);
+  /* border: 1px solid; */
+  height: 100vh;
+  display: block;
+}
+
+/* ===================================================== */
+
+/* media queries */
+
+/* -hp- */
+@media screen and (max-width: 450px) {
+  html {
+    font-size: 0.45rem;
+  }
+  body {
+    min-width: 100%;
+    width: 10rem;
+  }
+  /* home */
+
+  .header {
+    margin-right: 0%;
+    position: fixed;
+  }
+
+  .navbar {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    background-color: #383434;
+    width: 30rem;
+    height: 100vh;
+    transition: 1s;
+    display: block;
+    overflow: hidden;
+  }
+
+  /* medsos */
+
+  .navbar #social {
+    display: inline-block;
+  }
+
+  .social {
+    position: fixed;
+    font-weight: bold;
+    text-align: center;
+  }
+  .social ul {
+    padding: 0px;
+    transform: translate(-243rem, 0);
+  }
+  .social ul li {
+    /* border: 1px solid blue; */
+    display: block;
+    margin: 1rem;
+    background: rgba(0, 0, 0, 0.36);
+    width: 250rem;
+    text-align: right;
+    padding: 0;
+    border-radius: 0 30rem 30rem 0;
+    transition: all 1s;
+  }
+  .social ul li:hover {
+    transform: translate(110px, 0);
+    background: rgba(0, 0, 0, 0.4);
+  }
+  .social ul li:hover a {
+    color: black;
+  }
+  .social ul li:hover i {
+    color: #fff;
+    background: rgba(0, 0, 0, 0.36);
+    transform: rotate(360deg);
+    transition: all 1s;
+  }
+  .social ul li i {
+    margin-left: 1rem;
+    color: #000;
+    background: #fff;
+    padding: 1rem;
+    border-radius: 50%;
+    width: 5rem;
+    height: 5rem;
+    font-size: 3rem;
+    background: #ffffff;
+    transform: rotate(0deg);
+    /* border: 1px solid yellow; */
+  }
+
+  /* medsos end */
+
+  .navbar.active {
+    right: 0;
+  }
+
+  .header .navbar a {
+    display: block;
+    padding: 0.5rem;
+    margin: 1.5rem;
+    font-size: 3rem;
+  }
+
+  .header .navbar a:hover::after {
+    transform-origin: 0 0;
+  }
+
+  .navbar-extra #menu {
+    display: inline-block;
+  }
+
+  .banner {
+    width: 100%;
+    background-position: 90%;
+  }
+
+  .banner .container h1 {
+    font-size: 4.5rem;
+  }
+
+  .banner .container h3 {
+    /* border: 1px solid; */
+    font-size: 3rem;
+    padding-top: 1.5rem;
+  }
+
+  /* about */
+
+  .about {
+    height: 100vh;
+    perspective: 1000px;
+  }
+
+  .about-content {
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+  }
+
+  .about.flipped .about-content {
+    transform: rotateY(180deg);
+  }
+
+  .about-content .about-image {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    /* border: 1px solid; */
+    width: 49rem;
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+  }
+
+  .about-content .about-tulisan {
+    border-radius: 30px;
+    border: 2px solid var(--main-color);
+    box-shadow: 0 3px 18px 3px rgba(255, 255, 255, 0.411);
+    /* border: 2px solid blue; */
+    backface-visibility: hidden;
+    position: absolute;
+    width: 41rem;
+    height: 61rem;
+    padding-top: 0%;
+    background-color: var(--bg-color);
+    transform: rotateY(180deg);
+    overflow: hidden;
+    font-size: 2rem;
+  }
+
+  .about-content .about-tulisan h1 {
+    font-size: 4rem;
+    justify-content: center;
+    padding: 0.8rem;
+  }
+
+  .about-content .about-tulisan p {
+    font-size: 1.7rem;
+    padding: 0.5rem 0.8em;
+    padding-top: 1rem;
+  }
+
+  .about-content .about-tulisan h2 {
+    font-size: 4rem;
+    padding-top: 0%;
+    /* border: 1px solid yellow; */
+    padding-bottom: 5rem;
+    position: relative;
+  }
+}
