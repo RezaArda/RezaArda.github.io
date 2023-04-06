@@ -357,11 +357,11 @@ body {
 
   .about-content .about-tulisan p {
     font-size: 1.7rem;
-    padding: 0.8rem;
+    padding: 0.5rem 0.8em;
   }
 
   .about-content .about-tulisan h2 {
-    font-size: 4rem;
-    padding-top: 0.1rem;
+    font-size: 3rem;
+    padding-top: 0%;
   }
 }
