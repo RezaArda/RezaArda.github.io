@@ -250,7 +250,6 @@ body {
   z-index: 2;
   height: 85%;
   width: 50%;
-  margin-left: 20px;
 }
 
 .about .about-tulisan h1 {
@@ -508,7 +507,7 @@ body {
     position: absolute;
     width: 41rem;
     height: 61rem;
-    padding-top: 5%;
+    padding-top: 3%;
     background-color: var(--bg-color);
     transform: rotateY(180deg);
     overflow: hidden;
@@ -523,9 +522,9 @@ body {
   }
 
   .about-content .about-tulisan p {
-    font-size: 1.8rem;
+    font-size: 100%;
     padding: 0.5rem 0.8em;
-    padding-top: 0.8rem;
+    padding-top: 0.1rem;
   }
 
   .about-content .about-tulisan h2 {
